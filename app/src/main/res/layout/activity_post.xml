@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <include
+        android:id="@+id/update_post_page_toolbar"
+        layout="@layout/app_bar_layout"/>
+
+    <ImageView
+        android:id="@+id/select_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/profile"/>
+
+    <EditText
+        android:id="@+id/post_description"
+        android:background="@drawable/inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Write something about your image here"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_updatePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Update Post" />
+
+</LinearLayout>
